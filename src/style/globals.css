@@ -74,7 +74,8 @@
   --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
   --sidebar-border: oklch(0.928 0.006 264.531);
   --sidebar-ring: oklch(0.707 0.022 261.325);
-  /*-_----------{  Website Font Variables  }----------_*/
+  
+  /*W <Comment>----------={  Website Font Variables  }=----------</Comment> */
   --font-1: "Salsa", cursive;
   --font-2: "Roboto Condensed", sans-serif;
 }
@@ -122,7 +123,7 @@
   }
 }
 
-/* G_-------------{  Brawer reset code for Website  }---------------_*/
+/*W <Comment>------------={  Brawer reset code for Website  }=--------------</Comment> */
 *,
 *::after,
 *::before{
@@ -139,9 +140,9 @@ a:hover{
   text-decoration: none;
 }
 body{
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  max-width: 1600px;
+  max-width: 2200px;
   font-size: 100%;
   font-family: var(--font-1);
   line-height: 1.5;
@@ -151,7 +152,7 @@ p{
   font-family: var(--font-2)!important;
   font-weight: 400;
 }
-/* G_----------{  Scrollbar style  }---------- */
+/*W <Comment>----------={  Scrollbar style  }=----------</Comment> */
 html{
   scroll-behavior: smooth;
 }
@@ -159,8 +160,8 @@ html{
   width: 0.625rem;
 }
 ::-webkit-scrollbar-track{
-  background-color: #ffffff;
+  background-color: var(--color-background);
 }
 ::-webkit-scrollbar-thumb{
-  background-color: #000;
+  background-color: var(--color-foreground);
 }

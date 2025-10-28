@@ -64,9 +64,9 @@ export default function Home() {
                   src/app/page.tsx
                 </code>
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-sm mt-2">
                 Author:
-                <i className="bg-muted px-2 py-1 rounded text-xs">
+                <i className="px-2 py-1 text-xs">
                   Bisakto Rahi
                 </i>
               </p>
