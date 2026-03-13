@@ -1,10 +1,10 @@
 "use client";
 
+import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { SampleFeature } from "@/components/feature/sample-feature";
-import { motion } from "motion/react";
+import { fadeRightAnimation, fadeUpAnimation } from "@/lib/motion.utils";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
-import { fadeRightAnimation, fadeUpAnimation } from "@/lib/utils";
 import Link from "next/link";
 
 export default function Home() {
@@ -66,9 +66,7 @@ export default function Home() {
               </p>
               <p className="text-sm mt-2">
                 Author:
-                <i className="px-2 py-1 text-xs">
-                  Bisakto Rahi
-                </i>
+                <i className="px-2 py-1 text-xs">Bisakto Rahi</i>
               </p>
             </motion.div>
           </motion.div>

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { API_BASE_URL } from '@/config/configURL';
-import { Book, BookResponse, BookSearchParams, CreateBookDto, UpdateBookDto } from '@/interface/book';
+import { Book, BookResponse, BookSearchParams, CreateBookDto, UpdateBookDto } from '@/interface/interface';
 
 //W---------={ axios instance with proper configuration }=----------</br>
 const bookApi = axios.create({

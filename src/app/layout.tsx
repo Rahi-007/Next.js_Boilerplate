@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import { ThemeProvider } from "@/provider/themeProvider";
 import { Salsa, Roboto_Condensed } from "next/font/google";
 import "../style/globals.css";
-import { ThemeProvider } from "@/provider/themeProvider";
 
 const salsa = Salsa({
   variable: "--font-salsa",
@@ -17,14 +17,15 @@ const roboto = Roboto_Condensed({
 
 export const metadata: Metadata = {
   title: "Next.js Starter Template",
-  description: "A production-ready Next.js starter template with TypeScript, Tailwind CSS, and shadcn/ui",
+  description:
+    "A production-ready Next.js starter template with TypeScript, Tailwind CSS, and shadcn/ui",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
+interface IProps {
   children: React.ReactNode;
-}>) {
+}
+
+export default function RootLayout({ children }: Readonly<IProps>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${salsa.variable} ${roboto.variable} antialiased`}>

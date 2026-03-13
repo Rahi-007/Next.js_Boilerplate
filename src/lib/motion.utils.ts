@@ -1,11 +1,3 @@
-import { clsx, type ClassValue } from "clsx";
-import { twMerge } from "tailwind-merge";
-
-//W---------={ Join className For Tailwind }=----------</br>
-export function cn(...inputs: ClassValue[]) {
-  return twMerge(clsx(inputs));
-}
-
 //W---------={ Reusable fadeUp animation function }=----------</br>
 export const fadeUpAnimation = (y = 0, duration = 0, delay = 0) => ({
   initial: { opacity: 0, y },
@@ -19,7 +11,6 @@ export const fadeRightAnimation = (x = 20, duration = 0.5, delay = 0) => ({
   animate: { opacity: 1, x: 0 },
   transition: { duration, delay },
 });
-
 
 //W---------={ FadeUp Animation }=----------</br>
 export const fadeUp = {

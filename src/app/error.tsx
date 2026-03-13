@@ -1,22 +1,23 @@
-'use client'
+"use client";
 
-import { useEffect } from 'react'
+import { useEffect } from "react";
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error & { digest?: string }
-  reset: () => void
-}) {
+interface IProps {
+  error: Error & { digest?: string };
+  reset: () => void;
+}
+
+export default function Error({ error, reset }: IProps) {
   useEffect(() => {
-    console.error('Application error:', error)
-  }, [error])
+    console.error("Application error:", error);
+  }, [error]);
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center">
       <div className="text-center">
-        <h2 className="text-2xl font-bold text-red-600 mb-4">Something went wrong!</h2>
+        <h2 className="text-2xl font-bold text-red-600 mb-4">
+          Something went wrong!
+        </h2>
         <p className="text-gray-600 mb-4">
           We apologize for the inconvenience. An unexpected error occurred.
         </p>
@@ -28,5 +29,5 @@ export default function Error({
         </button>
       </div>
     </div>
-  )
+  );
 }
