@@ -6,8 +6,8 @@
 4.  Code Spell Checket
 5.  Color Highlight 
 6.  Css Peek
-7.  Dummy Text Generator
-8.  ES7+ React/Redux//React-Native snippets
+7.  Dummy Text Generator x
+8.  Format Html In PHP
 9.  HTML CSS Support
 10. ES7 React/Redux/GraphQL/React-Native snippets
 11. GitLens
@@ -27,5 +27,6 @@
 25. Windsurf Plugin (Ai Support)
 26. GitHub Copilot
 27. Code Runner
+28. 
 
 ;
